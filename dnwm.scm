@@ -13,14 +13,14 @@
 (define-public dnwm
 (package (inherit dwm)
  (name "dnwm")
- (version "1.5")
+ (version "1.6")
  (source (origin
 	  (method git-fetch)
 	  (uri (git-reference
 		(url "https://github.com/Antigravityd/dnwm")
 		(commit (string-append "v" version))))
 	  (sha256
-	   (base32 "0l6azj8fs0bms46a1nqyqf19k3bfq0l4n7xgfmym6aj99cnqvnqv"))))
+	   (base32 "0gc7ni93c97j4d2x37yrh0avdwwziki1cv1gkzan68h6agl1kxj2"))))
 
  (build-system gnu-build-system)
  (arguments
