@@ -1,0 +1,17 @@
+* How to Use
+
+Add the following to =/.config/guix/channels.scm=:
+
+#+begin_src emacs-lisp
+
+  (append (list (channel
+           (name 'dnw)
+           (url "https://github.com/Antigravityd/dnw")
+           (introduction
+            (make-channel-introduction
+             "fe2aba4aa6baa42bc5fbc2de094386379af84f6"
+             (openpgp-fingerprint
+              "C888F97C58C162244E10CB70330A691DE94B56D7")))))
+          %default-channels)
+
+#+end_src
