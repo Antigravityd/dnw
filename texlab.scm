@@ -1262,121 +1262,121 @@ API to decouple token-based libraries from the procedural macro use case.")
       "This package provides a generic serialization/deserialization framework")
     (license (list expat asl2.0))))
 
-;; (define-public rust-windows-x86-64-msvc-0.36
-;;   (package
-;;     (name "rust-windows-x86-64-msvc")
-;;     (version "0.36.1")
-;;     (source
-;;       (origin
-;;         (method url-fetch)
-;;         (uri (crate-uri "windows_x86_64_msvc" version))
-;;         (file-name (string-append name "-" version ".tar.gz"))
-;;         (sha256
-;;           (base32 "103n3xijm5vr7qxr1dps202ckfnv7njjnnfqmchg8gl5ii5cl4f8"))))
-;;     (build-system cargo-build-system)
-;;     (arguments `(#:skip-build? #t))
-;;     (home-page "https://github.com/microsoft/windows-rs")
-;;     (synopsis "Code gen support for the windows crate")
-;;     (description "Code gen support for the windows crate")
-;;     (license (list expat asl2.0))))
+(define-public rust-windows-x86-64-msvc-0.36
+  (package
+    (name "rust-windows-x86-64-msvc")
+    (version "0.36.1")
+    (source
+      (origin
+        (method url-fetch)
+        (uri (crate-uri "windows_x86_64_msvc" version))
+        (file-name (string-append name "-" version ".tar.gz"))
+        (sha256
+          (base32 "103n3xijm5vr7qxr1dps202ckfnv7njjnnfqmchg8gl5ii5cl4f8"))))
+    (build-system cargo-build-system)
+    (arguments `(#:skip-build? #t))
+    (home-page "https://github.com/microsoft/windows-rs")
+    (synopsis "Code gen support for the windows crate")
+    (description "Code gen support for the windows crate")
+    (license (list expat asl2.0))))
 
-;; (define-public rust-windows-x86-64-gnu-0.36
-;;   (package
-;;     (name "rust-windows-x86-64-gnu")
-;;     (version "0.36.1")
-;;     (source
-;;       (origin
-;;         (method url-fetch)
-;;         (uri (crate-uri "windows_x86_64_gnu" version))
-;;         (file-name (string-append name "-" version ".tar.gz"))
-;;         (sha256
-;;           (base32 "1qfrck3jnihymfrd01s8260d4snql8ks2p8yaabipi3nhwdigkad"))))
-;;     (build-system cargo-build-system)
-;;     (arguments `(#:skip-build? #t))
-;;     (home-page "https://github.com/microsoft/windows-rs")
-;;     (synopsis "Code gen support for the windows crate")
-;;     (description "Code gen support for the windows crate")
-;;     (license (list expat asl2.0))))
+(define-public rust-windows-x86-64-gnu-0.36
+  (package
+    (name "rust-windows-x86-64-gnu")
+    (version "0.36.1")
+    (source
+      (origin
+        (method url-fetch)
+        (uri (crate-uri "windows_x86_64_gnu" version))
+        (file-name (string-append name "-" version ".tar.gz"))
+        (sha256
+          (base32 "1qfrck3jnihymfrd01s8260d4snql8ks2p8yaabipi3nhwdigkad"))))
+    (build-system cargo-build-system)
+    (arguments `(#:skip-build? #t))
+    (home-page "https://github.com/microsoft/windows-rs")
+    (synopsis "Code gen support for the windows crate")
+    (description "Code gen support for the windows crate")
+    (license (list expat asl2.0))))
 
-;; (define-public rust-windows-i686-msvc-0.36
-;;   (package
-;;     (name "rust-windows-i686-msvc")
-;;     (version "0.36.1")
-;;     (source
-;;       (origin
-;;         (method url-fetch)
-;;         (uri (crate-uri "windows_i686_msvc" version))
-;;         (file-name (string-append name "-" version ".tar.gz"))
-;;         (sha256
-;;           (base32 "097h2a7wig04wbmpi3rz1akdy4s8gslj5szsx8g2v0dj91qr3rz2"))))
-;;     (build-system cargo-build-system)
-;;     (arguments `(#:skip-build? #t))
-;;     (home-page "https://github.com/microsoft/windows-rs")
-;;     (synopsis "Code gen support for the windows crate")
-;;     (description "Code gen support for the windows crate")
-;;     (license (list expat asl2.0))))
+(define-public rust-windows-i686-msvc-0.36
+  (package
+    (name "rust-windows-i686-msvc")
+    (version "0.36.1")
+    (source
+      (origin
+        (method url-fetch)
+        (uri (crate-uri "windows_i686_msvc" version))
+        (file-name (string-append name "-" version ".tar.gz"))
+        (sha256
+          (base32 "097h2a7wig04wbmpi3rz1akdy4s8gslj5szsx8g2v0dj91qr3rz2"))))
+    (build-system cargo-build-system)
+    (arguments `(#:skip-build? #t))
+    (home-page "https://github.com/microsoft/windows-rs")
+    (synopsis "Code gen support for the windows crate")
+    (description "Code gen support for the windows crate")
+    (license (list expat asl2.0))))
 
-;; (define-public rust-windows-i686-gnu-0.36
-;;   (package
-;;     (name "rust-windows-i686-gnu")
-;;     (version "0.36.1")
-;;     (source
-;;       (origin
-;;         (method url-fetch)
-;;         (uri (crate-uri "windows_i686_gnu" version))
-;;         (file-name (string-append name "-" version ".tar.gz"))
-;;         (sha256
-;;           (base32 "1dm3svxfzamrv6kklyda9c3qylgwn5nwdps6p0kc9x6s077nq3hq"))))
-;;     (build-system cargo-build-system)
-;;     (arguments `(#:skip-build? #t))
-;;     (home-page "https://github.com/microsoft/windows-rs")
-;;     (synopsis "Code gen support for the windows crate")
-;;     (description "Code gen support for the windows crate")
-;;     (license (list expat asl2.0))))
+(define-public rust-windows-i686-gnu-0.36
+  (package
+    (name "rust-windows-i686-gnu")
+    (version "0.36.1")
+    (source
+      (origin
+        (method url-fetch)
+        (uri (crate-uri "windows_i686_gnu" version))
+        (file-name (string-append name "-" version ".tar.gz"))
+        (sha256
+          (base32 "1dm3svxfzamrv6kklyda9c3qylgwn5nwdps6p0kc9x6s077nq3hq"))))
+    (build-system cargo-build-system)
+    (arguments `(#:skip-build? #t))
+    (home-page "https://github.com/microsoft/windows-rs")
+    (synopsis "Code gen support for the windows crate")
+    (description "Code gen support for the windows crate")
+    (license (list expat asl2.0))))
 
-;; (define-public rust-windows-aarch64-msvc-0.36
-;;   (package
-;;     (name "rust-windows-aarch64-msvc")
-;;     (version "0.36.1")
-;;     (source
-;;       (origin
-;;         (method url-fetch)
-;;         (uri (crate-uri "windows_aarch64_msvc" version))
-;;         (file-name (string-append name "-" version ".tar.gz"))
-;;         (sha256
-;;           (base32 "0ixaxs2c37ll2smprzh0xq5p238zn8ylzb3lk1zddqmd77yw7f4v"))))
-;;     (build-system cargo-build-system)
-;;     (arguments `(#:skip-build? #t))
-;;     (home-page "https://github.com/microsoft/windows-rs")
-;;     (synopsis "Code gen support for the windows crate")
-;;     (description "Code gen support for the windows crate")
-;;     (license (list expat asl2.0))))
+(define-public rust-windows-aarch64-msvc-0.36
+  (package
+    (name "rust-windows-aarch64-msvc")
+    (version "0.36.1")
+    (source
+      (origin
+        (method url-fetch)
+        (uri (crate-uri "windows_aarch64_msvc" version))
+        (file-name (string-append name "-" version ".tar.gz"))
+        (sha256
+          (base32 "0ixaxs2c37ll2smprzh0xq5p238zn8ylzb3lk1zddqmd77yw7f4v"))))
+    (build-system cargo-build-system)
+    (arguments `(#:skip-build? #t))
+    (home-page "https://github.com/microsoft/windows-rs")
+    (synopsis "Code gen support for the windows crate")
+    (description "Code gen support for the windows crate")
+    (license (list expat asl2.0))))
 
-;; (define-public rust-windows-sys-0.36
-;;   (package
-;;     (name "rust-windows-sys")
-;;     (version "0.36.1")
-;;     (source
-;;       (origin
-;;         (method url-fetch)
-;;         (uri (crate-uri "windows-sys" version))
-;;         (file-name (string-append name "-" version ".tar.gz"))
-;;         (sha256
-;;           (base32 "1lmqangv0zg1l46xiq7rfnqwsx8f8m52mqbgg2mrx7x52rd1a17a"))))
-;;     (build-system cargo-build-system)
-;;     (arguments
-;;       `(#:skip-build?
-;;         #t
-;;         #:cargo-inputs
-;;         (("rust-windows-aarch64-msvc" ,rust-windows-aarch64-msvc-0.36)
-;;          ("rust-windows-i686-gnu" ,rust-windows-i686-gnu-0.36)
-;;          ("rust-windows-i686-msvc" ,rust-windows-i686-msvc-0.36)
-;;          ("rust-windows-x86-64-gnu" ,rust-windows-x86-64-gnu-0.36)
-;;          ("rust-windows-x86-64-msvc" ,rust-windows-x86-64-msvc-0.36))))
-;;     (home-page "https://github.com/microsoft/windows-rs")
-;;     (synopsis "Rust for Windows")
-;;     (description "Rust for Windows")
-;;     (license (list expat asl2.0))))
+(define-public rust-windows-sys-0.36
+  (package
+    (name "rust-windows-sys")
+    (version "0.36.1")
+    (source
+      (origin
+        (method url-fetch)
+        (uri (crate-uri "windows-sys" version))
+        (file-name (string-append name "-" version ".tar.gz"))
+        (sha256
+          (base32 "1lmqangv0zg1l46xiq7rfnqwsx8f8m52mqbgg2mrx7x52rd1a17a"))))
+    (build-system cargo-build-system)
+    (arguments
+      `(#:skip-build?
+        #t
+        #:cargo-inputs
+        (("rust-windows-aarch64-msvc" ,rust-windows-aarch64-msvc-0.36)
+         ("rust-windows-i686-gnu" ,rust-windows-i686-gnu-0.36)
+         ("rust-windows-i686-msvc" ,rust-windows-i686-msvc-0.36)
+         ("rust-windows-x86-64-gnu" ,rust-windows-x86-64-gnu-0.36)
+         ("rust-windows-x86-64-msvc" ,rust-windows-x86-64-msvc-0.36))))
+    (home-page "https://github.com/microsoft/windows-rs")
+    (synopsis "Rust for Windows")
+    (description "Rust for Windows")
+    (license (list expat asl2.0))))
 
 (define-public rust-simd-adler32-0.3
   (package
