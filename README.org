@@ -1,3 +1,6 @@
+* Yet Another Personal Channel
+
+I use this for testing packages before pushing to Guix and a couple packages not likely to be of general interest.
 * How to Use
 
 Add the following to =/.config/guix/channels.scm=:

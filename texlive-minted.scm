@@ -1,12 +1,3 @@
-(use-modules (guix packages)
-	     (guix download)
-	     (guix build-system texlive)
-	     (guix build-system gnu)
-	     (guix build utils)
-	     (guix licenses)
-	     (ice-9 match)
-	     ((srfi srfi-1) #:hide (zip))
-	     (gnu packages python-xyz))
 
 (define-module (texlive-minted)
   #:use-module (guix packages)
@@ -83,8 +74,8 @@ copied to their outputs; otherwise the TEXLIVE-BUILD-SYSTEM is used."
     (simple-texlive-package
      "texlive-minted"
      (list "doc/latex/minted/" "source/latex/minted/" "tex/latex/minted/")
-     (base32 "13cjsjb3b04n9arwp46ayk8fcicylxq5g1864cpxl1lxjxh1yi0l")
-     #:trivial? "t"))
+     (base32 "13cjsjb3b04n9arwp46ayk8fcicylxq5g1864cpxl1lxjxh1yi0l")))
+   (inputs `(("texlive" ,texlive)))
    (propagated-inputs `(("python-pygments" ,python-pygments)))
    (home-page "https://ctan.org/macros/latex/contrib/minted")
    (synopsis "Highlighted source code for LaTeX")
