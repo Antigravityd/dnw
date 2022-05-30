@@ -3,6 +3,7 @@
    #:use-module (guix download)
    #:use-module (guix licenses)
    #:use-module (guix build-system cargo)
+   #:use-module (guix build-system texlive)
    #:use-module (gnu packages crates-io)
    #:use-module (gnu packages tex))
 
