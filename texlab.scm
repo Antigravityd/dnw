@@ -1885,7 +1885,8 @@ Argument Parser")
           (base32 "0aaxj9j3c40xphynyvsikpphh4bvlycw1mzgbh1rsjrmfw1iffks"))))
     (build-system cargo-build-system)
     (arguments
-      `(#:cargo-inputs
+     `(#:rust rust@1.60.1
+       #:cargo-inputs
         (("rust-anyhow" ,rust-anyhow-1)
          ("rust-byteorder" ,rust-byteorder-1)
          ("rust-chrono" ,rust-chrono-0.4)
