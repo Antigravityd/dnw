@@ -3,7 +3,8 @@
    #:use-module (guix download)
    #:use-module (guix licenses)
    #:use-module (guix build-system cargo)
-   #:use-module (gnu packages crates-io))
+   #:use-module (gnu packages crates-io)
+   #:use-module (nongnu packages rust))
 
 ;; (use-modules (guix packages)
 ;; 	     (guix download)
@@ -1885,7 +1886,7 @@ Argument Parser")
           (base32 "0aaxj9j3c40xphynyvsikpphh4bvlycw1mzgbh1rsjrmfw1iffks"))))
     (build-system cargo-build-system)
     (arguments
-     `(#:rust ,rust@1.61.0
+     `(#:rust ,rust-firefox-1.61.0
        #:cargo-inputs
         (("rust-anyhow" ,rust-anyhow-1)
          ("rust-byteorder" ,rust-byteorder-1)
