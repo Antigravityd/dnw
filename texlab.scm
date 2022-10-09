@@ -3,8 +3,8 @@
    #:use-module (guix download)
    #:use-module (guix licenses)
    #:use-module (guix build-system cargo)
-   #:use-module (gnu packages crates-io)
-   #:use-module (nongnu packages rust))
+   #:use-module (gnu packages crates-io))
+;;   #:use-module (nongnu packages rust))
 
 ;; (use-modules (guix packages)
 ;; 	     (guix download)
